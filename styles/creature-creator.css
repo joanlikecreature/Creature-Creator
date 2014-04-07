@@ -1,0 +1,117 @@
+body{
+	width: 100%;
+	height: 100%;
+}
+
+.timer {
+	font-family: arial, serif;
+	font-size: 20px;
+	color: red;
+}
+
+.little-square
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #aaa;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.shape{
+	margin: auto;
+	cursor: move;
+	display: inline-block;
+	margin: 10px;
+}
+
+.little-t
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #ace;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.little-l
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #eac;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.little-flip-l
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #aec;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.little-line
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #eca;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.little-s
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #cea;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.little-z
+{
+	width: 40px;
+	height: 40px;
+	border: 4px solid black;
+	background-color: #cae;
+	display: inline-block;
+	margin: 0 -4px;
+}
+
+.invisible
+{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+
+.center
+{
+	text-align: center;
+	margin: auto;
+}
+
+.right
+{
+	text-align: right;
+	float: right;
+}
+
+.left
+{
+	text-align: left;
+	float: left;
+}
+
+.tight
+{
+	height: 44px;
+}
