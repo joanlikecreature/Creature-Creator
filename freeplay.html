@@ -1,15 +1,19 @@
 <head>
-<script type="text/javascript" src="scripts/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="scripts/jquery.countdownTimer.js"></script>
-<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.ui.touch-punch.js"></script>
-<link rel="stylesheet" type="text/css" href="http://www.joanlikecreature.com/styles/styles.css">
-<link rel="stylesheet" type="text/css" href="styles/creature-creator.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+	<script type="text/javascript" src="scripts/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.ui.touch-punch.js"></script>
+	<script type="text/javascript" src="scripts/jQueryRotate.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://www.joanlikecreature.com/styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/creature-creator.css" />
+	<title>Creature Creator - Free Play</title>
 </head>
 <body>
 	<h1> Creature Creator - Free Play</h1>
 	<p class="center">Click and drag the shapes to create creatures!</p>
-	<div class="shape">
+	<p class="center">Shift + click to rotate the shapes :) </p>
+	</br>
+	<div class="shape" id="square">
 		<div class="tight">
 			<div class="little-square"></div>
 			<div class="little-square"></div>
@@ -20,7 +24,7 @@
 		</div>
 	</div>
 
-	<div class="shape">
+	<div class="shape" id="t">
 		<div class="tight">
 			<div class="invisible"></div>
 			<div class="little-t"></div>
@@ -33,7 +37,7 @@
 		</div>
 	</div>
 
-	<div class="shape">
+	<div class="shape" id="flip-l">
 		<div class="tight">
 			<div class="little-flip-l"></div>
 			<div class="invisible"></div>
@@ -46,7 +50,9 @@
 		</div>
 	</div>
 
-	<div class="shape">
+	<div class="clear"></div>
+
+	<div class="shape" id="l">
 		<div class="tight">
 			<div class="invisible"></div>
 			<div class="invisible"></div>
@@ -59,7 +65,7 @@
 		</div>
 	</div>
 
-	<div class="shape">
+	<div class="shape" id="line">
 		<div class="tight">
 			<div class="little-line"></div>
 			<div class="little-line"></div>
@@ -68,7 +74,7 @@
 		</div>
 	</div>
 
-	<div class="shape">
+	<div class="shape" id="s">
 		<div class="tight">
 			<div class="invisible"></div>
 			<div class="little-s"></div>
@@ -81,7 +87,7 @@
 		</div>
 	</div>
 
-	<div class="shape">
+	<div class="shape" id="z">
 		<div class="tight">
 			<div class="little-z"></div>
 			<div class="little-z"></div>
@@ -95,6 +101,22 @@
 
 	</div>
 <script>
-$( ".shape" ).draggable();
+$(".shape").mousedown(function(event) {
+    if (event.shiftKey) {
+    	var object = $(this).attr("id");
+    	if (object !=="square"){
+    		if ($(this).data("angle")==undefined) {
+    			$(this).data("angle", 0);
+    		}		
+    		$(this).data("angle", ($(this).data("angle") + 90)%360);
+        $(this).rotate($(this).data("angle"));
+    	}
+    }
+    else
+    {
+    	$( ".shape" ).draggable();
+    }
+});
+
 </script>
 </body>

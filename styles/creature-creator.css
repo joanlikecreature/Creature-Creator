@@ -1,6 +1,8 @@
 body{
 	width: 100%;
 	height: 100%;
+	margin: auto;
+	text-align: center;
 }
 
 .timer {
@@ -114,4 +116,9 @@ body{
 .tight
 {
 	height: 44px;
+}
+
+.clear: 
+{
+	clear: all;
 }
