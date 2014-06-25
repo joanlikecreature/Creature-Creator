@@ -16,7 +16,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #aaa;
+	background-color: #6f4e9e;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -26,6 +26,15 @@ body{
 	cursor: move;
 	display: inline-block;
 	margin: 10px;
+	background-color: #ccc;
+}
+
+.puzzle{
+	margin: auto;
+	cursor: move;
+	display: inline-block;
+	margin: 10px;
+	background-color: #ddd;
 }
 
 .little-t
@@ -33,7 +42,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #ace;
+	background-color: #f26721;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -43,7 +52,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #eac;
+	background-color: #70bd44;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -53,7 +62,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #aec;
+	background-color: #ec1b3d;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -63,7 +72,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #eca;
+	background-color: #407cbf;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -73,7 +82,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #cea;
+	background-color: #f1ea17;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -83,7 +92,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border: 4px solid black;
-	background-color: #cae;
+	background-color: #b1509d;
 	display: inline-block;
 	margin: 0 -4px;
 }
@@ -121,4 +130,16 @@ body{
 .clear: 
 {
 	clear: all;
+}
+
+.left-side
+{
+	width: 45%;
+	display: inline-block;
+}
+.right-side
+{
+	width: 45%;
+	display: inline-block;
+	background-color: #eee;
 }
